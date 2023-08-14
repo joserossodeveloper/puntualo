@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RestaurantDetail"
+    android:background="@color/azul"
+    android:padding="10dp">
+
+    <ImageView
+        android:id="@+id/imgRestaurantPhoto"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@color/azul_claro"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textRestaurantName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imgRestaurantPhoto"
+        android:textColor="@color/lila"
+        android:layout_marginLeft="10dp"
+        android:textSize="18sp"
+        tools:text="Nombre del restaurante" />
+
+    <TextView
+        android:id="@+id/textRestaurantSpecialty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@+id/imgRestaurantPhoto"
+        app:layout_constraintTop_toBottomOf="@+id/textRestaurantName"
+        android:textColor="@color/celeste"
+        android:background="@color/mora"
+        android:paddingVertical="3dp"
+        android:paddingHorizontal="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:textSize="12sp"
+        tools:text="Especialidad" />
+
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:layout_marginTop="4dp"
+        android:background="@color/mora"
+        android:padding="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/buttonScore"
+        tools:layout_editor_absoluteX="9dp">
+
+        <TextView
+            android:id="@+id/textTotalScore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/celeste"
+            android:textSize="40sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="5" />
+
+        <TextView
+            android:id="@+id/textTotalScoreStars"
+            android:layout_width="wrap_content"
+            android:layout_height="23dp"
+            android:textColor="@color/lila"
+            android:textSize="15sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textTotalScore"
+            tools:text="⭐⭐⭐⭐⭐" />
+
+        <TextView
+            android:id="@+id/textNumScore"
+            android:layout_width="wrap_content"
+            android:layout_height="23dp"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/celeste"
+            android:textSize="15sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textTotalScoreStars"
+            tools:text="30" />
+
+        <TextView
+            android:id="@+id/textTotalScoreProduct"
+            android:layout_width="wrap_content"
+            android:layout_height="23dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/lila"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textTotalScoreInfrastructure"
+            tools:text="Platillo ⭐⭐⭐⭐⭐" />
+
+        <TextView
+            android:id="@+id/textTotalScoreService"
+            android:layout_width="wrap_content"
+            android:layout_height="23dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/lila"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textTotalScoreProduct"
+            tools:text="Atención al cliente ⭐⭐⭐⭐⭐" />
+
+        <TextView
+            android:id="@+id/textTotalScoreInfrastructure"
+            android:layout_width="wrap_content"
+            android:layout_height="23dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/lila"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textTotalScoreSecurity"
+            tools:text="Infraestructura ⭐⭐⭐⭐⭐" />
+
+        <TextView
+            android:id="@+id/textTotalScoreSecurity"
+            android:layout_width="wrap_content"
+            android:layout_height="23dp"
+            android:textColor="@color/lila"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Seguridad ⭐⭐⭐⭐⭐" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:id="@+id/buttonMapp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ubicación"
+        android:textColor="@color/celeste"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgRestaurantPhoto" />
+
+    <Button
+        android:id="@+id/buttonScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calificar"
+        android:textColor="@color/celeste"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonMapp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerScores"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout"
+        tools:layout_editor_absoluteX="10dp" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

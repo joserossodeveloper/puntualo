@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "245683378554",
+    "project_id": "puntualo-9ae06",
+    "storage_bucket": "puntualo-9ae06.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:245683378554:android:41c7a9fe894a6f325adec3",
+        "android_client_info": {
+          "package_name": "com.example.puntualo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "245683378554-11rhncv3q1uu5muksfgfgpr4oqdq4411.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBl3YXDxXBfPkH3uUzgqCNgddVIt7IwoU8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "245683378554-11rhncv3q1uu5muksfgfgpr4oqdq4411.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

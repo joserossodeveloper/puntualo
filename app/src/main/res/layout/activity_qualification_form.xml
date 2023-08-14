@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".QualificationForm"
+    android:background="@color/azul">
+
+    <TextView
+        android:id="@+id/text_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Calificar"
+        android:textAlignment="center"
+        android:textColor="@color/celeste"
+        android:textSize="20sp"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+
+    <LinearLayout
+        android:id="@+id/linear_seguridad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_title"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/text_seguridad"
+            android:layout_width="85dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginTop="30dp"
+            android:text="Seguridad"
+            android:textColor="@color/celeste"
+            android:textSize="10sp"
+            android:layout_marginBottom="30dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.526"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_title"
+            tools:ignore="MissingConstraints" />
+
+        <RatingBar
+            android:id="@+id/ratingBarSecurity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:numStars="5"
+            android:progressTint="#FFC107"
+            tools:layout_editor_absoluteX="107dp"
+            tools:layout_editor_absoluteY="173dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/linear_infraestructura"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linear_seguridad"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/text_infraestructura"
+            android:layout_width="85dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginTop="30dp"
+            android:text="Infraestructura"
+            android:textColor="@color/celeste"
+            android:textSize="10sp"
+            android:layout_marginBottom="30dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.526"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linear_infraestructura"
+            tools:ignore="MissingConstraints" />
+
+        <RatingBar
+            android:id="@+id/ratingBarInfrastructure"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:numStars="5"
+            android:progressTint="#FFC107"
+            tools:layout_editor_absoluteX="107dp"
+            tools:layout_editor_absoluteY="173dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/linear_platillo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linear_infraestructura"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/text_platillo"
+            android:layout_width="85dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginTop="30dp"
+            android:text="Platillo"
+            android:textColor="@color/celeste"
+            android:textSize="10sp"
+            android:layout_marginBottom="30dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.526"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_title"
+            tools:ignore="MissingConstraints" />
+
+        <RatingBar
+            android:id="@+id/ratingBarProduct"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:numStars="5"
+            android:progressTint="#FFC107"
+            tools:layout_editor_absoluteX="107dp"
+            tools:layout_editor_absoluteY="173dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/linear_servicio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linear_platillo"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/text_servicio"
+            android:layout_width="85dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginTop="30dp"
+            android:text="Atención al cliente"
+            android:textColor="@color/celeste"
+            android:textSize="10sp"
+            android:layout_marginBottom="30dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.526"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_title"
+            tools:ignore="MissingConstraints" />
+
+        <RatingBar
+            android:id="@+id/ratingBarService"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:numStars="5"
+            android:progressTint="#FFC107"
+            tools:layout_editor_absoluteX="107dp"
+            tools:layout_editor_absoluteY="173dp" />
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/text_comment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="30dp"
+        android:text="Comentario"
+        android:textColor="@color/lila"
+        android:textSize="18sp"
+        android:layout_marginBottom="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.526"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linear_servicio"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/editTextTextMultiLine"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="20dp"
+        android:inputType="textMultiLine"
+        android:textColor="@color/lila"
+        android:padding="10dp"
+        android:background="@color/mora"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_comment"
+        tools:text="comentario"/>
+
+    <Button
+        android:id="@+id/buttonCreateScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Guardar"
+        android:textSize="13sp"
+        android:layout_margin="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

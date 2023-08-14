@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.user.UserFragment"
+    android:background="@color/azul">
+
+    <TextView
+        android:id="@+id/text_dashboard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        tools:text="Perfil"
+        android:textColor="@color/celeste"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textUserFullName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:textAlignment="center"
+        android:textColor="@color/celeste"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_dashboard"
+        tools:text="José Carlos Rosso Rosales" />
+
+    <TextView
+        android:id="@+id/textUserType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textColor="@color/celeste"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textUserFullName"
+        tools:text="Administrador" />
+
+    <LinearLayout
+        android:id="@+id/linearUserEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/mora"
+        android:layout_marginTop="40dp"
+        android:layout_marginHorizontal="20dp"
+        android:padding="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/textUserType">
+
+        <TextView
+            android:id="@+id/email"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/lila"
+            android:textSize="13sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textUserType"
+            android:text="Correo" />
+
+        <TextView
+            android:id="@+id/textUserEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textUserType"
+            tools:text="admin@gmail.com" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearUserDNI"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/mora"
+        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="20dp"
+        android:padding="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/linearUserEmail">
+
+        <TextView
+            android:id="@+id/dni"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/lila"
+            android:textSize="13sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:text="DNI" />
+
+
+        <TextView
+            android:id="@+id/textUserDNI"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:text="987654321" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearUserName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/mora"
+        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="20dp"
+        android:padding="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/linearUserDNI">
+
+        <TextView
+            android:id="@+id/userName"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/lila"
+            android:textSize="13sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:text="Nombres" />
+
+        <TextView
+            android:id="@+id/textUserName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:text="José Carlos" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linearUserFatherLastName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/mora"
+        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="20dp"
+        android:padding="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/linearUserName">
+
+        <TextView
+            android:id="@+id/userFatherLastName"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/lila"
+            android:textSize="13sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:text="Apellido paterno" />
+
+        <TextView
+            android:id="@+id/textUserFatherLastName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:text="Rosso" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearUserMotherLastName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/mora"
+        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="20dp"
+        android:padding="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/linearUserFatherLastName">
+
+        <TextView
+            android:id="@+id/userMotherLastName"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/lila"
+            android:textSize="13sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:text="Apellido materno" />
+
+        <TextView
+            android:id="@+id/textUserMotherLastName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textUserFatherLastName"
+            tools:text="Rosales" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearUserBirthdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/mora"
+        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="20dp"
+        android:padding="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/linearUserMotherLastName">
+
+        <TextView
+            android:id="@+id/userBirthdate"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/lila"
+            android:textSize="13sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:text="Fecha de nacimiento" />
+
+        <TextView
+            android:id="@+id/textUserBirthdate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textUserFatherLastName"
+            tools:text="06/04/2001" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/buttonEditUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="@color/azul_claro"
+        android:text="Editar perfil"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearUserBirthdate" />
+
+    <Button
+        android:id="@+id/buttonLogout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/azul_claro"
+        android:text="Cerrar sesión"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonEditUser" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
